@@ -17,9 +17,6 @@ function Nav() {
                <li className="nav-item">
                     <Link className="nav-link" to="/contatos">Contatos</Link>
                </li>
-               <li className="nav-item">
-                    <Link className="nav-link" to="/formulario">Formulario</Link>
-               </li>
            </ul>
        </nav>
     );

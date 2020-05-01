@@ -18,9 +18,6 @@ function Section() {
                 <Route exact path="/contatos">
                     <Contato />
                 </Route>
-                <Route exact path="/formulario">
-                    <Formulario />
-                </Route>
               </Switch>
         </section>
     );
@@ -28,28 +25,6 @@ function Section() {
 
 export default Section
 
-
-function Formulario(){
-    return(
-        <>
-        <form>
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="nome" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="email" />
-            </div>
-            <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="number" class="form-control" id="telefone" placeholder="telefone" />
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
-        </form>
-        </>
-    );
-}
 
 function Categoria(){
     let {id} = useParams();
@@ -135,6 +110,22 @@ function Contato(){
                 <h1>Contato</h1>
             </div>
             <div className="col-sm-1"></div> 
+
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="nome" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email" />
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" class="form-control" id="telefone" placeholder="telefone" />
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </form>
         </div>
         
     );
